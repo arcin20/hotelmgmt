@@ -1,0 +1,26 @@
+.form-container  {
+    margin-left: 40%;
+    width: 200px;
+    height: 200px;
+}
+#input1{
+    margin-bottom: 5%;
+}
+
+#input2 {
+    margin-bottom: 5%;
+}
+
+#input3 {
+    margin-bottom: 5%;
+}
+#input4 {
+    margin-bottom: 5%;
+}
+#input5 {
+    margin-bottom: 5%;
+}
+
+button {
+    margin-left: 2%;
+}
