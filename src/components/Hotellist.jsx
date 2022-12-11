@@ -1,4 +1,4 @@
-import '../components/Hotellist.css';
+import '../components/hotellist.css';
 
 const Hotellist = ({hotels}) => {
     return (

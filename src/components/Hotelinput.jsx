@@ -1,5 +1,5 @@
 
-import '../components/Hotelinput.css';
+import '../components/hotelinput.css';
 import { useState } from 'react';
 
 const Hotelinput = ({addHotel}) => { 
@@ -25,6 +25,8 @@ const handleSubmit = (event) => {
 
 <form onSubmit={handleSubmit}/>
 
+
+
  
 
   return (
@@ -32,12 +34,12 @@ const handleSubmit = (event) => {
 
 
     <div className="form-container">
-      <form onSubmit={handleSubmit}> 
+      <form onSubmit={handleSubmit} > 
         <div>
 
-      <input id="input1" type="text" name="hotelname" placeholder="Hotelname" value={hotelinfo.hotelname} onChange={handleChange}/>
-      <input id="input4" type="text" name="adresse" placeholder="Straße" value={hotelinfo.adresse} onChange={handleChange} />
-      <input id="input5" type="number" name="zimmeranzahl" placeholder="Anzahl der Zimmer" value={hotelinfo.zimmeranzahl} onChange={handleChange} />
+      <input id="input1" type="text" name="hotelname" placeholder="Hotelname" value={hotelinfo.hotelname} onChange={handleChange} required />
+      <input id="input4" type="text" name="adresse" placeholder="Straße" value={hotelinfo.adresse} onChange={handleChange} required />
+      <input id="input5" type="number" name="zimmeranzahl" placeholder="Anzahl der Zimmer" value={hotelinfo.zimmeranzahl} onChange={handleChange} required />
       <button >Speichern</button>
     </div>
 

@@ -15,6 +15,12 @@ const Navigation = () => {
                 <Link className='nav-link' to='/hotelinfo'>
                     HOTELINFO
                 </Link>
+                <Link className='nav-link' to='/buchungen'>
+                    BUCHUNGEN
+                </Link>
+                <Link className='nav-link' to='/checkin'>
+                    CHECKIN
+                </Link>
                 <Link className='nav-link' to='/anmelden'>
                     ANMELDEN
                 </Link>

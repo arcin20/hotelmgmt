@@ -1,6 +1,6 @@
-import Hotelinput from '../../components/Hotelinput.jsx';
+import Hotelinput from '../../components/hotelinput.jsx';
 import { useState } from 'react';
-import Hotellist from "../../components/Hotellist.jsx";
+import Hotellist from "../../components/hotellist.jsx";
 
 
 
