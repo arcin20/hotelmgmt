@@ -1,9 +1,20 @@
+
 import CheckInForm from "../../components/checkin-form/checkin-form.component";
-const CheckIn = () => {
+
+
+
+const CheckIn = () => 
+{
+
+
+    
+    
     return (
         <div>
         <h2>CheckIn</h2>
+       
         <CheckInForm></CheckInForm>
+    
         </div>
     )
 }

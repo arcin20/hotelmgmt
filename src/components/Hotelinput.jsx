@@ -2,7 +2,11 @@
 import '../components/hotelinput.css';
 import { useState } from 'react';
 
+
+
 const Hotelinput = ({addHotel}) => { 
+
+
 const [hotelinfo, setHotelinfo] = useState(
   {
     hotelname: "",
@@ -21,7 +25,10 @@ const handleSubmit = (event) => {
  
   addHotel(hotelinfo);
   setHotelinfo({hotelname: "", adresse:"", zimmeranzahl:"" })
+  console.log(hotelinfo)
 }
+
+
 
 <form onSubmit={handleSubmit}/>
 

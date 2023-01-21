@@ -1,12 +1,19 @@
-import { useState } from 'react';
+import { useContext } from "react";
+import { ZimmerGastContext } from "../../contexts/zimmer_gast.context";
+import Hotellist from '../../components/hotellist';
 
 const Buchungen = () => {
-  
+   const {zimmeranzahl} = useContext(ZimmerGastContext);
     
     return (
-        <h2>Hier können Buchungen von anderen Hotelanbietern geprüft werden.</h2>
+        <div>
+        <h1>Buchungen</h1>
+        <div  name="name">
+           { zimmeranzahl.map(roomanzahl => <Hotellist name={roomanzahl.name} hotel={roomanzahl} /> )}
 
-
+        </div>
+        
+        </div>
     )
 }
 

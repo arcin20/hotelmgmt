@@ -1,6 +1,10 @@
 import { useState } from "react";
 
+
+import Hotelinput from "../hotelinput";
 const CheckInForm = () => {
+
+  
 
   const [inputFields, setInputFields] = useState([
       {vorname: '',
@@ -66,6 +70,7 @@ const CheckInForm = () => {
     console.log(inputFields)
     const errorRes = formValidation(inputFields)
    console.log("errorRes", errorRes)
+   
   }
 
   
@@ -74,7 +79,9 @@ const CheckInForm = () => {
 
 
         <div className="form-container">
-          <form > 
+          <form> 
+          
+         
             {inputFields.map((input, index)  => { 
              return (
             <div key={index}>
@@ -85,6 +92,7 @@ const CheckInForm = () => {
           <input id="input5" type="text" required name="ausweisnummer" placeholder="Ausweisnummer" value={input.ausweisnummer}  onChange={event => handleFormChange(index, event)} required />
           <label htmlFor="birthday">Geburtstag:</label>
           <input id="input4" type="date" required name="geburtstag" value={input.geburtstag || ""} onChange={event => handleFormChange(index, event)}  />
+          
           
           <button onClick={(e) => removeFields(index,e)}>-</button>
           
@@ -97,6 +105,8 @@ const CheckInForm = () => {
 
         <button onClick={addFields}>+</button>
         <button onClick={submit}>CHECKIN</button>
+
+        
             
         </div>
             
